@@ -127,7 +127,8 @@
 
                 // Create a cube for each image
                 const cube = document.createElement('a-box');
-                cube.setAttribute('src', `#${imgId}`);
+        
+                cube.setAttribute('material', `shader: flat; src: #${imgId}; repeat: 1 1; transparent: true; opacity: 1`); // Add material with shader and repeat properties
                 cube.setAttribute('position', `${x} 4.5 ${z}`);
                 cube.setAttribute('width', '9'); // Cube size
                 cube.setAttribute('height', '9'); // Cube size
